@@ -1,0 +1,43 @@
+.CategoryPage {
+  text-align: center;
+}
+
+.CategoryPage-header {
+  background-color: #ffc003;
+  color: #00bf99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 15vh;
+  text-transform: uppercase;
+}
+
+.CategoryPage-filter {
+  color: #666;
+  margin: 20px 0;
+}
+
+.CategoryPage-filter input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 5px 10px;
+  height: 20px;
+  width: 120px;
+}
+
+.CategoryPage-stores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .CategoryPage-stores {
+    width: 90%;
+  }
+}
+

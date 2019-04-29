@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "test",
-    "serve": "node app.js"
+    "serve": "nodemon app.js",
+    "start": "npm run serve && cd client && npm start"
   },
   "repository": {
     "type": "git",
@@ -19,9 +20,16 @@
   "homepage": "https://github.com/Glovo/frontend-assignment#readme",
   "dependencies": {
     "@koa/cors": "^2.2.2",
+    "fs": "^0.0.1-security",
     "jsonfile": "^4.0.0",
     "koa": "^2.5.2",
+    "koa-mount": "^4.0.0",
     "koa-router": "^7.4.0",
-    "koa-static": "^5.0.0"
+    "koa-send": "^5.0.0",
+    "koa-static": "^5.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0"
   }
 }

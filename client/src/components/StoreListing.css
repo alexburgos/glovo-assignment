@@ -1,0 +1,43 @@
+.StoreListing {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  color: #00bf99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  padding: 25px 0;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.StoreListing h2 {
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.StoreListing p {
+  color: #666;
+  margin: 0;
+}
+
+.StoreListing-open {
+  background: #ffc003;
+  color: #333;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.StoreListing-closed {
+  background: #ff0051;
+  color: #fff;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
