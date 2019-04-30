@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "test",
-    "serve": "nodemon app.js",
+    "serve": "node app.js",
     "start": "npm run serve && cd client && npm start"
   },
   "repository": {

@@ -1,10 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./CategoryCard.css";
+// eslint-disable-next-line
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const CategoryCard = props => {
-  let { name, label, sleepIcon, openIcon } = props;
+  let { 
+    name, 
+    label, 
+    sleepIcon, 
+    openIcon 
+  } = props;
 
   let isCategoryClosed = false;
   return (
@@ -19,6 +25,11 @@ const CategoryCard = props => {
   );
 };
 
-CategoryCard.propTypes = {};
+CategoryCard.propTypes = {
+  name: PropTypes.string,
+  label: PropTypes.string,
+  sleepIcon: PropTypes.string,
+  openIcon: PropTypes.string
+};
 
 export default CategoryCard;

@@ -4,7 +4,6 @@ const serve = require('koa-static')
 const cors = require('@koa/cors');
 const mount = require('koa-mount');
 const jsonfile = require('jsonfile');
-const ReactDOMServer = require('react-dom/server');
 
 const app = new Koa();
 const staticPages = new Koa();

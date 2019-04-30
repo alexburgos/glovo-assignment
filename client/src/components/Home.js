@@ -27,6 +27,8 @@ function Home(props) {
   );
 }
 
-Home.propTypes = {};
+Home.propTypes = {
+  categories: PropTypes.array,
+};
 
 export default Home;

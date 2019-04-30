@@ -30,7 +30,10 @@ const StoreListing = props => {
 }
 
 StoreListing.propTypes = {
-
+  name: PropTypes.string,
+  description: PropTypes.string,
+  openStatus: PropTypes.string,
+  nextSchedule: PropTypes.object
 };
 
 export default StoreListing;
