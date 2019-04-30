@@ -15,12 +15,13 @@ const CategoryCard = props => {
   let isCategoryClosed = false;
   return (
     <div className="Category">
+      <Router>
         <Link to={`/${name}`}>
           {!isCategoryClosed && <img src={openIcon} alt="open-icon" />}
           {isCategoryClosed && <img src={sleepIcon} alt="sleep-icon" />}
           <p>{label}</p>
         </Link>
-
+      </Router>
     </div>
   );
 };
