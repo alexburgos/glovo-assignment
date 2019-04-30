@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "./CategoryCard.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './CategoryCard.css';
 // eslint-disable-next-line
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -9,19 +9,17 @@ const CategoryCard = props => {
     name, 
     label, 
     sleepIcon, 
-    openIcon 
+    openIcon,
   } = props;
 
   let isCategoryClosed = false;
   return (
     <div className="Category">
-      <Router>
-        <Link to={`/${name}`}>
-          {!isCategoryClosed && <img src={openIcon} alt="open-icon" />}
-          {isCategoryClosed && <img src={sleepIcon} alt="sleep-icon" />}
-          <p>{label}</p>
-        </Link>
-      </Router>
+      <Link to={`/${name}`}>
+        {!isCategoryClosed && <img src={openIcon} alt="open-icon" />}
+        {isCategoryClosed && <img src={sleepIcon} alt="sleep-icon" />}
+        <p>{label}</p>
+      </Link>
     </div>
   );
 };

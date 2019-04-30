@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import CategoryCard from "./CategoryCard";
+import React from 'react';
+import PropTypes from 'prop-types';
+import CategoryCard from './CategoryCard';
 
 function Home(props) {
   return (
@@ -16,7 +16,8 @@ function Home(props) {
               name: category.name,
               label: category.label,
               openIcon: category.openIcon,
-              sleepIcon: category.sleepIcon
+              sleepIcon: category.sleepIcon,
+              currentDate: props.currentDate
             };
 
             return <CategoryCard key={category.id} {...categoryProps} />;

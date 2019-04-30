@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import "./CategoryPage.css";
-import StoreListing from "./StoreListing";
+import './CategoryPage.css';
+import StoreListing from './StoreListing';
 import { find, sortBy, every, flatten, uniq } from 'lodash';
 
 class CategoryPage extends Component {

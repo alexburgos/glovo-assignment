@@ -7,3 +7,4 @@ it('renders without crashing', () => {
   ReactDOM.render(<CategoryPage />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
