@@ -21,12 +21,12 @@ class App extends Component {
 
   getCategories = () => {
     const getOptions = {
-      method: "GET",
-      credentials: "same-origin",
-      cache: "no-cache",
+      method: 'GET',
+      credentials: 'same-origin',
+      cache: 'no-cache',
       headers: new Headers({
-        "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest"
+        'Content-Type': 'application/json',
+        'X-Requested-With': 'XMLHttpRequest'
       })
     };
 
@@ -41,7 +41,8 @@ class App extends Component {
         this.setState({
           categories: data.categories
         });
-      });
+      })
+      .catch((err) => console.error(err));
   };
 
   render() {

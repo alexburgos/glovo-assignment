@@ -111,12 +111,12 @@ class CategoryPage extends Component {
 
   getStores = () => {
     const getOptions = {
-      method: "GET",
-      credentials: "same-origin",
-      cache: "no-cache",
+      method: 'GET',
+      credentials: 'same-origin',
+      cache: 'no-cache',
       headers: new Headers({
-        "Content-Type": "application/json",
-        "X-Requested-With": "XMLHttpRequest"
+        'Content-Type': 'application/json',
+        'X-Requested-With': 'XMLHttpRequest'
       })
     };
 
@@ -141,7 +141,8 @@ class CategoryPage extends Component {
           filteredStores: sortedStores,
           tags: uniq(flatten(sortingTags))
         });
-      });
+      })
+      .catch((err) => console.error(err));
   };
 
   render() {
