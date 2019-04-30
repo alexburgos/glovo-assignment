@@ -161,7 +161,7 @@ class CategoryPage extends Component {
     return (
       <div className="CategoryPage">
         <header className="CategoryPage-header">
-          <h1> {this.props.categoryLabel} Stores </h1>
+          <h1> {this.props.categoryLabel}</h1>
         </header>
         
         <div className="CategoryPage-filter">
