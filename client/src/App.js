@@ -12,6 +12,7 @@ class App extends Component {
     this.state = {
       categories: [],
       currentDate: dayjs(),
+      errorStatus: ''
     };
   }
 
@@ -30,6 +31,11 @@ class App extends Component {
       })
     };
 
+    this.setState({
+      errorStatus: ''
+    });
+
+
     fetch(`/categories`, getOptions)
       .then(response => {
         if (response.ok) {
@@ -42,7 +48,13 @@ class App extends Component {
           categories: data.categories
         });
       })
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        this.setState({
+          errorStatus: 'Error fetching categories'
+        });
+        alert('Error fetching categories')
+        console.error(err);
+      });
   };
 
   render() {

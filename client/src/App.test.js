@@ -40,7 +40,7 @@ describe('App', () => {
     json: () => Promise.resolve(mockCategories)
   }));
 
-  it('fetches store based on category', () => {
+  it('fetches categories', () => {
     const url = '/categories'
     const getOptions = {
       method: 'GET',

@@ -12,7 +12,8 @@ class CategoryPage extends Component {
       stores: [],
       filteredStores: [],
       tagFilter: '',
-      tags: []
+      tags: [],
+      errorStatus: ''
     };
   }
 
@@ -120,6 +121,10 @@ class CategoryPage extends Component {
       })
     };
 
+    this.setState({
+      errorStatus: ''
+    });
+
     fetch(`/stores?category=${this.props.categoryName}`, getOptions)
       .then(response => {
         if (response.ok) {
@@ -142,7 +147,13 @@ class CategoryPage extends Component {
           tags: uniq(flatten(sortingTags))
         });
       })
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        this.setState({
+          errorStatus: 'Error fetching stores'
+        });
+        alert('Error fetching stores')
+        console.error(err);
+      });
   };
 
   render() {
