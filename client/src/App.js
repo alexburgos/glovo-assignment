@@ -48,7 +48,9 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Link to={`/`} className="App-back-link">&#8592; {`Go Back`} </Link>
+          <Link to={`/`} className="App-back-link">
+            <span role="img" aria-label="back">&#8592;</span>
+          </Link>
           <div>
             <Route exact path={`/`} render={() => <Home categories={this.state.categories}/> } />
             {this.state.categories.map( (category, index) => {

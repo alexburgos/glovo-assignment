@@ -50,17 +50,17 @@
       "tags": ["healthy", "breakfast"],
       "schedule": [
         {
-          "day": 3,
-          "open": "06:00",
-          "close": "11:00"
-        },
-        {
           "day": 1,
           "open": "06:00",
           "close": "11:00"
         },
         {
           "day": 2,
+          "open": "06:00",
+          "close": "11:00"
+        },
+        {
+          "day": 3,
           "open": "06:00",
           "close": "11:00"
         },

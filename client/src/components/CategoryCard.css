@@ -1,6 +1,11 @@
 .Category {
   border: 1px solid #ddd;
   border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  -ms-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  -o-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
   cursor: pointer;
   display: flex;
   flex-direction:  column;
@@ -8,6 +13,7 @@
   align-items: center;
   text-align: center;
   margin: 15px;
+  padding: 10px;
   height: 125px;
   width: 125px;
 }
@@ -22,7 +28,7 @@
   width: 75px;
 }
 .Category a {
-  color: #000;
+  color: #333;
   text-decoration: none;
 }
 

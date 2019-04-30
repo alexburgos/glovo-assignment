@@ -9,7 +9,7 @@ const StoreListing = props => {
     name,
     description,
     openStatus,
-    currentSchedule
+    nextSchedule
   } = props;
 
   return (
@@ -19,10 +19,10 @@ const StoreListing = props => {
       {openStatus === 'open' &&
         <div className="StoreListing-open"><span>Open right now</span></div>
       }
-      {openStatus === 'closed' && 
-        <div className="StoreListing-closed"><span>Next opening time: {fullWeekDays[currentSchedule[0].day]} at {currentSchedule[0].open}</span></div>
+      {openStatus === 'closed' && nextSchedule &&
+        <div className="StoreListing-closed"><span>Next opening time: {fullWeekDays[nextSchedule.day]} at {nextSchedule.open}</span></div>
       }
-      {openStatus === 'no-schedule' && 
+      {openStatus === 'no-schedule' &&
         <div className="StoreListing-closed"><span>Sorry! No hours for today</span></div>
       }
     </div>

@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import CategoryCard from "./CategoryCard";
 
 function Home(props) {
-  console.log(props);
   return (
     <div>
       <header className="App-header">
         <h1> Available Categories </h1>
+        <p>Click on any of the following categories to see which stores are open near you: </p>
       </header>
       {props.categories.length > 0 && (
         <div className="App-categories">

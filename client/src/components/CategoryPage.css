@@ -10,12 +10,16 @@
   align-items: center;
   justify-content: center;
   min-height: 15vh;
-  text-transform: uppercase;
+}
+
+.App-header p {
+  color: #333;
+  margin: 0;
 }
 
 .CategoryPage-filter {
-  color: #666;
-  margin: 20px 0;
+  color: #333;
+  margin: 50px 0 25px;
 }
 
 .CategoryPage-filter input {
@@ -25,6 +29,37 @@
   padding: 5px 10px;
   height: 20px;
   width: 120px;
+}
+
+.CategoryPage-tags {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.CategoryPage-tags span {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  -ms-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  -o-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.CategoryPage-tags span:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s linear;
+}
+
+.CategoryPage-clear {
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 .CategoryPage-stores {
